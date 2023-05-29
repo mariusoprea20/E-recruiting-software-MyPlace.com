@@ -1,0 +1,1 @@
+{"date":"Tue Apr 4 1:05:57 CEST 2023","message":"SQLSTATE[HY000]: General error: 1 2 values for 3 columns","location":{"file":"D:\\XAMPP\\htdocs\\PHP\\myplace\\php\\src\\database.php","line":29}}

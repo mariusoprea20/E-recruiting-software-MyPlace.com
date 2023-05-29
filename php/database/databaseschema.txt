@@ -1,0 +1,77 @@
+
+CREATE TABLE user(
+ user_id INTEGER PRIMARY KEY AUTOINCREMENT,
+ user_type TEXT NOT NULL,
+ email TEXT NOT NULL UNIQUE,
+ password TEXT NOT NULL,
+ firstName TEXT,
+ lastName TEXT,
+ prefSalary INTEGER DEFAULT 'empty',
+ skills TEXT DEFAULT 'empty',
+ jobTitle TEXT DEFAULT 'empty',
+ description TEXT DEFAULT 'empty',
+ candidate_CV BLOB DEFAULT NULL,
+ city TEXT NOT NULL,
+ postcode TEXT NOT NULL,
+ telNumber TEXT NOT NULL,
+ logo BLOB DEFAULT NULL
+);
+
+CREATE TABLE job(
+job_id INTEGER PRIMARY KEY AUTOINCREMENT,
+user_id INTEGER,
+job_name TEXT NOT NULL,
+job_type TEXT NOT NULL,
+job_description TEXT NOT NULL,
+job_requirements TEXT NOT NULL,
+job_jobDuties TEXT NOT NULL,
+job_datePosted TEXT,
+job_salary NUMERIC(10, 2) NOT NULL,
+job_city TEXT NOT NULL,
+job_postcode TEXT NOT NULL,
+FOREIGN KEY(user_id) REFERENCES user(user_id) ON DELETE CASCADE
+);
+
+CREATE TABLE application(
+applicationId INTEGER PRIMARY KEY AUTOINCREMENT,
+user_id INTEGER,
+job_id INTEGER,
+application_date TEXT NOT NULL,
+candidate_CV BLOB DEFAULT NULL,
+notes TEXT NULL,
+status TEXT DEFAULT 'new',
+FOREIGN KEY(user_id) REFERENCES user(user_id) ON DELETE CASCADE,
+FOREIGN KEY(job_id) REFERENCES job(job_id) ON DELETE CASCADE
+);
+
+create TABLE savedjobs(
+savedJobs_id INTEGER PRIMARY KEY AUTOINCREMENT,
+job_id INTEGER,
+user_id INTEGER,
+FOREIGN KEY(user_id) REFERENCES user(user_id) ON DELETE CASCADE,
+FOREIGN KEY(job_id) REFERENCES job(job_id) ON DELETE CASCADE
+);
+
+CREATE TABLE jobpreferences(
+pref_id INTEGER PRIMARY KEY AUTOINCREMENT,
+user_id INTEGER,
+job_name TEXT NOT NULL,
+job_type TEXT NOT NULL,
+job_city TEXT NOT NULL,
+minSalary INTEGER,
+maxSalary INTEGER,
+FOREIGN KEY(user_id) REFERENCES user(user_id) ON DELETE CASCADE 
+);
+
+CREATE TABLE chat(
+chatId INTEGER PRIMARY KEY AUTOINCREMENT,
+user_id INTEGER,
+usertargetid INTEGER,
+messageemployer TEXT DEFAULT 'old',
+messagejobseeker TEXT DEFAULT 'new',
+datetime TEXT
+);
+
+PRAGMA foreign_keys = ON;
+
+
