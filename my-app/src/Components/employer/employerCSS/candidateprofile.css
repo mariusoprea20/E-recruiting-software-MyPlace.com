@@ -1,0 +1,119 @@
+.candidateProfileContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .candidateProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+  }
+  
+  .candidateProfileImages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .displayProfile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .displayProfile label {
+    font-weight: bold;
+    width: 40%;
+  }
+  
+  .displayProfile p {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #C9C9C9;
+  }
+  .mainCandidateButtons{
+    display:flex;
+    flex-direction: row;
+    padding-left:70%;
+  }
+  
+  .handleTheMessage {
+    background-color: #cdd3da;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right:2%;
+  }
+  
+  .closeCandidateProfile {
+    background-color: #cdd3da;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .thisCandidateCV{
+    width:100%;
+    padding-bottom:2%;
+    width:100vh;
+    height:100vh;
+    z-index: 1000;
+    background-color: white;
+    margin-top:-30%;
+  }
+
+  .openThisCandidateCV{
+    background-color: #cdd3da;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 1%;
+  }
+
+  .closeProfileCV{
+    background-color: #4c9dfa;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 1%;
+  }
+
+  .openThisCandidateCV:hover{
+    background-color: #4c9dfa;
+  }
+  .handleTheMessage:hover{
+    background-color: #4c9dfa;
+  }
+
+  .closeCandidateProfile:hover{
+    background-color: #4c9dfa;
+  }

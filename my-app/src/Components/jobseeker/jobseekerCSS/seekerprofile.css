@@ -1,0 +1,116 @@
+.profileContainer {
+  margin-top:2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: #F3F3F3;
+  width:90%;
+  margin-left:5%; */
+  background-color: #eeebeb;
+}
+.profile-img {
+  display: flex;
+  width: 100%; 
+  background-image: linear-gradient(to top, #eeebeb 30%, #0b4b83 0%);
+  padding-bottom: 1%;
+}
+.profileTitle{
+ padding-top: 7%;
+ padding-left: 30%;
+ color:#F3F3F3;
+}
+
+.profileNotEditing, .profileEditing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height:auto;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: #F3F3F3;
+}
+
+.display-profile, .input-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.display-profile label, .input-profile label {
+  font-weight: bold;
+  width: 40%;
+}
+
+.display-profile p, .input-profile input, .input-profile textarea {
+  width: 60%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #C9C9C9;
+}
+
+.editProfileBTN {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.editProfileBTN button {
+  width:100px;
+  padding: 10px 20px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.deleteAccoutBtn {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  margin-left: 90%;
+  margin-top: -7%;
+  z-index: 999;
+}
+.deleteAccoutBtn button {
+
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 10px;;
+}
+
+.input-profileBTN {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.input-profileBTN button {
+  padding: 10px 20px;
+  background-color: #7bb6e9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  width:100px;
+}
+
+.input-profile textarea {
+  resize: none;
+}
+
+.input-profileBTN button:hover{
+  background-color: #b1b2c2;
+}

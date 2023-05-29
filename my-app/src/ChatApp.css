@@ -1,0 +1,170 @@
+.chatApp-container {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  height: 700px;
+  width: 90%;
+  background-color: #f5f5f5;
+  size: fixed;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #100cf7;
+  margin-left:5%;
+}
+
+.guestList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  border-right: 1px solid #ccc;
+  background-color: #5dbffc;
+  overflow-y: auto;
+  gap:2%;
+  border-radius: 20px 0px 0px 20px;
+  margin-left:-2.5%;
+
+}
+
+.guestImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.chat-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:75%;
+}
+
+.myMessages {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  overflow-y: scroll;
+  flex-grow: 1;
+  border-bottom: 1px solid #ccc;
+  max-height: 700px;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  max-width: 70%; 
+}
+
+
+.message-loggedUser {
+  align-self: flex-start;
+  background-color: #0350a2;
+  color: #ffffff;
+}
+
+.message-guestUser {
+  align-self: flex-end;
+  background-color: #f3ecec;
+  color: #000000;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 5px;
+}
+
+.user {
+  font-weight: bold;
+}
+
+.textBoxMessage {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.new-message-input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.send-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
+
+.eachGuest {
+  display:flex;
+  flex-direction: row;
+  height: 10%;
+  width:100%;
+  
+}
+.eachGuest:hover {
+  background-color: rgba(18, 2, 242, 0.1);
+  cursor: pointer;
+}
+.guestName{
+  padding-top:8%;
+}
+
+.noConversation{
+  padding-left: 15%;
+  position: fixed;
+}
+
+.conversationStart{
+  padding-left: 15%;
+  position: fixed;
+}
+
+
+@media (max-width: 868px) {
+  .chatApp-container {
+    height: 500px;
+    width: 90%;
+    margin-top:10%;
+    
+  }
+
+  .myMessages {
+    max-height: 500px;
+  }
+  .guestList{
+    gap:50px;
+  }
+  .eachGuest {
+    margin-top:5%;
+    width:auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .chatApp-container {
+    height: 400px;
+  }
+
+  .myMessages {
+    max-height: 400px;
+  }
+  .guestList{
+    gap:50px;
+  }
+  .eachGuest {
+    width:auto;
+  }
+}

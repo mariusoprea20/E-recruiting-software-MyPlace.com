@@ -1,0 +1,56 @@
+.uploadCV {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .viewMyCV {
+    background-color: #008cba;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 10px 24px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .viewMyCV:hover {
+    background-color: #0073ad;
+  }
+  
+  .btnCVUpload {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .btnCVUpload button {
+    background-color: #008cba;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .btnCVUpload button:hover {
+    background-color: #0073ad;
+  }
+  
+  .reader {
+    width: 100%;
+    height: calc(100% - 60px);
+  }
+  

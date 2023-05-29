@@ -1,0 +1,52 @@
+.myJobList {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-top: 3%;
+  margin-left: 12%;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+.jobImg {
+  flex: 0 0 30%;
+  margin-right: 20px;
+}
+
+.jobImg img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.jobDetails {
+  flex: 1;
+}
+
+.myJobList p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.myJobList p:first-child {
+  font-weight: bold;
+}
+
+.myJobList button {
+  width: 100px;
+  margin-top: 20px;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #538df8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.myJobList button:hover {
+  
+  box-shadow: 0px 0px 10px #05f390;
+}

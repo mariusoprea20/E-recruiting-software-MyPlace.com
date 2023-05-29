@@ -1,0 +1,53 @@
+.allSavedJobs {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.myJobList {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f2f2f2;
+}
+
+.searchPageJobDetails {
+    flex: 3;
+}
+
+
+.appliedStatus {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.savedJobsBtns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4%;
+}
+
+.savedJobsBtns button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 150px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.savedJobsBtns button:hover {
+    background-color: #319835;
+}
+
+.allSeekerSavedJobs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    width: 100%;
+}

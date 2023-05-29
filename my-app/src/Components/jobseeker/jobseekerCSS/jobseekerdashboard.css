@@ -1,0 +1,133 @@
+/*******JobSeeker Dashboard CSS************************/
+.gridContainer {
+  margin-top: 1%;
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas: 
+    "aside header"
+    "aside main"
+    "footer footer";
+  grid-gap: 10px;
+}
+
+.topInput {
+  grid-area: header;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.sidePanelSeeker {
+  grid-area: aside;
+  position: fixed;
+  margin-top: 6%;
+  border: 10px solid #d7dbda;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 14%;
+  min-width: 120px;
+  height: 590px;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 10px #065193;
+}
+
+.sidePanelSeeker button {
+  padding: 10px;
+  border: none;
+  background-color: #f2f2f2;
+  color: #333;
+  cursor: pointer;
+}
+
+.sidePanelSeeker button:hover {
+  background-color: #ddd;
+  box-shadow: 0px 0px 10px #05f390;
+}
+
+.sidePanelSeeker > * {
+  margin-bottom: 10px;
+  border: 0px solid #ccc;
+  border-radius: 20px;
+}
+
+.sidePanelSeeker .seekerProfileImg {
+  margin-top: 10px;
+  position: relative;
+  padding-bottom:20px;
+}
+
+.sidePanelSeeker .seekerProfileImg img {
+  width: 90%;
+  min-width: 100px;
+  height: 105%;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px #05f390;
+}
+
+.recomendedJobs {
+  grid-area: main;
+  margin-left: -20%;
+}
+
+.jobAlertComponent {
+  grid-area: main;
+  margin-left: -20%;
+}
+
+.userSavedJobs {
+  grid-area: main;
+  margin-left: -20%;
+}
+
+@media (max-width: 785px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header"
+                         "aside"
+                         "main"
+                         "footer";
+  }
+
+  .sidePanelSeeker {
+    grid-area: header;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    margin-top: 5%;
+    padding: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: none;
+    border-radius: 0;
+    padding-top:5%;
+
+  }
+
+  .sidePanelSeeker button {
+    width: auto;
+    padding: 8px 15px;
+    font-size: 12px;
+    align-items: center;
+  }
+
+  .seekerProfileImg {
+    display: none;
+  }
+
+  .topInput{
+    grid-area: aside;
+    padding-top: 10%;
+  }
+  .recomendedJobs{
+    grid-area:main;
+  }
+
+}

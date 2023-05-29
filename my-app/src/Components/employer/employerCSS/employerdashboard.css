@@ -1,0 +1,110 @@
+
+/*******Employer Dashboard CSS************************/
+
+.gridContainerEmp {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "aside header"
+                          "aside main"
+                          "footer footer"
+  ;
+    grid-gap: 10px;
+  }
+  .sidePanelEmp{
+    grid-area:aside;
+    position: fixed;
+    margin-top:8%;
+    border: 10px solid #e5e9e8;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #065193;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 14%;
+    min-width: 120px;
+    height: 590px;
+    background-color: #f2f2f2;
+  }
+  .sidePanelEmp button {
+    padding: 10px;
+    border: none;
+    background-color: #f2f2f2;
+    color: #333;
+    cursor: pointer;
+  }
+  .sidePanelEmp button:hover {
+    background-color: #ddd;
+    box-shadow: 0px 0px 10px #05f390;
+  }
+  .sidePanelEmp>* {
+    margin-bottom: 10px;
+    border: 0px solid #ccc;
+    border-radius: 20px;
+  }
+  
+  .profile-imageEmp {
+    margin-top: 10px;
+    position: relative;
+    padding-bottom:20px;
+  }
+  
+  .profile-imageEmp img {
+    width:auto;
+    height:auto;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #05f390;
+  }
+  
+  .myJobs{
+    grid-area: main;
+    margin-top:70px;
+    margin-left:-20%; 
+  }
+  
+  @media (max-width: 785px) {
+    .gridContainerEmp {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: "header"
+                           "aside"
+                           "main"
+                           "footer";
+    }
+  
+    .sidePanelEmp {
+      grid-area: header;
+      position: static;
+      width: 100%;
+      height: 55%;
+      margin-top: 5%;
+      padding: 12px;
+      display:flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      border: none;
+      border-radius: 0;
+      padding-top:10%;
+
+    }
+  
+    .sidePanelEmp button {
+      width: auto;
+      padding: 8px 15px;
+      font-size: 10px;
+      margin: 2px;
+      align-items: center;
+    }
+  
+    .profile-imageEmp {
+      display: none;
+    }
+  
+    .myJobs {
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+  
